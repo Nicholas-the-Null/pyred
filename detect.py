@@ -1,7 +1,4 @@
 import cv2
-import downloader
-import colorsys, os, sys
-from PIL import Image, ImageDraw
 
 
 def face(image):
@@ -11,15 +8,8 @@ def face(image):
     img = cv2.imread(image)
     # Convert into grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    # Detect faces
-    faces = face_cascade.detectMultiScale(gray, 1.1, 4) 
-    if type(faces) is tuple:
+    faces = face_cascade.detectMultiScale(gray, 1.1, 4) # Detect faces
+    if isinstance(faces,tuple):
         return False
     else:
         return True
-
-
-
-
-
-
