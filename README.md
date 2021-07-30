@@ -2,9 +2,14 @@
 my first reddit bot in python
 
 
-what it can do it?
 
-download random imgur image
-check if is a duplicate
-check if contains face other thing will add in future (for nsfw tag)
-post every half hour 
+1)download random imgur image
+
+
+2)check if is a duplicate
+
+
+3)check if contains face other thing will add in future (for nsfw tag)
+
+
+4)post every half hour 
